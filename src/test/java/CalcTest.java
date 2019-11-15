@@ -19,4 +19,8 @@ class CalcTest {
     void DivisionTest(){
         Assertions.assertEquals(Calculator.calculator("1/1"),1);
     }
+    @Test
+    void failingTest(){
+        Assertions.assertEquals(Calculator.calculator("2+2+6-2"),8);
+    }
 }
